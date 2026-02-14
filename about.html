@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thai Lottery Government Agency</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+if(localStorage.getItem("access_granted") !== "yes"){
+    window.location = "gate.html";
+}
+</script>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="main-header">
+    <div class="header-container">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo">
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Menu OUTSIDE header -->
+<nav id="mobileMenu" class="mobile-menu">
+
+    <div class="menu-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="results.html">Results</a>
+        <a href="winners.html">Winners</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="menu-logout">
+        <button onclick="logoutUser()" class="logout-btn">Logout</button>
+    </div>
+
+</nav>
+
+
+<!-- ===== PAGE HERO ===== -->
+<section class="hero" style="height:45vh;">
+  <div class="container">
+    <span style="color:#f5c26b;letter-spacing:2px;">ABOUT US</span>
+    <h1>Trusted Thai Lottery Information Platform</h1>
+    <p>Providing reliable, transparent, and updated Thai National Lottery information.</p>
+  </div>
+</section>
+
+<!-- ===== ABOUT CONTENT ===== -->
+<section class="section">
+  <div class="container about-grid">
+
+    <!-- LEFT IMAGE -->
+    <div class="about-image">
+      <img src="./assets/images/card3.jpg" alt="About Thai Lottery">
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="about-content">
+      <span class="about-label">ABOUT US</span>
+      <h2>We Provide Reliable Thai Lottery Information</h2>
+
+      <p class="about-highlight">
+        <strong>505+</strong> Trusted Agents & Information Partners
+      </p>
+
+      <p>
+        Thai Lottery Government Agency is a modern information platform focused
+        on providing accurate and up-to-date Thai National Lottery results.
+        Our goal is to ensure transparency, clarity, and easy access to lottery
+        information for users worldwide.
+      </p>
+
+      <p>
+        We operate with a strong commitment to user trust, data accuracy,
+        and professional support. Our platform is optimized for mobile users
+        and designed with a modern black-and-gold theme for a premium experience.
+      </p>
+
+      <p>
+        All information is updated regularly and presented in a clean,
+        user-friendly format to help users stay informed with confidence.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<section class="footer">
+  <h2>Call on IMO</h2>
+  <a class="btn">Contact Now</a>
+  <p style="margin-top:20px;color:#ccc;">
+    Bangla: +66 8141 90165<br>
+	Hindi: +66 8000 81382<br>
+    English: +66 6502 76616<br>
+  </p>
+</section>
+<!-- IMO POPUP -->
+<div class="imo-popup" id="imoPopup">
+  <div class="imo-box">
+    <h3>Call on IMO</h3>
+    <p>
+      Bangla: +66 8141 90165<br>
+	  Hindi: +66 8000 81382<br>
+      English: +66 6502 76616<br>
+    </p>
+    <button onclick="closeIMO()">Close</button>
+  </div>
+</div>
+<!-- ===== PRO Bottom Navigation ===== -->
+<!-- Premium Bottom Navigation -->
+<div class="bottom-nav">
+    <a href="index.html" class="bottom-item active">
+        <span class="icon">🏠</span>
+        <span>Home</span>
+    </a>
+
+    <a href="results.html" class="bottom-item">
+        <span class="icon">📊</span>
+        <span>Results</span>
+    </a>
+
+    <a href="winners.html" class="bottom-item">
+        <span class="icon">🏆</span>
+        <span>Winners</span>
+    </a>
+</div>
+
+
+
+
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>

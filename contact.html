@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thai Lottery Government Agency</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+if(localStorage.getItem("access_granted") !== "yes"){
+    window.location = "gate.html";
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="main-header">
+    <div class="header-container">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo">
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Menu -->
+<nav id="mobileMenu" class="mobile-menu">
+
+    <div class="menu-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="results.html">Results</a>
+        <a href="winners.html">Winners</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="menu-logout">
+        <button onclick="logoutUser()" class="logout-btn">Logout</button>
+    </div>
+
+</nav>
+>
+
+  <!-- Mobile Menu Button -->
+<div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="hero" style="height:45vh;">
+  <div class="container">
+    <span style="color:#f5c26b;letter-spacing:2px;">CONTACT US</span>
+    <h1>Get in Touch With Us</h1>
+    <p>We are here to help you with Thai Lottery information and support.</p>
+  </div>
+</section>
+
+<!-- ===== CONTACT SECTION ===== -->
+<section class="section">
+  <div class="container contact-grid">
+
+    <!-- LEFT FORM -->
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Phone Number">
+        <input type="text" placeholder="Country">
+        <input type="text" placeholder="State">
+        <textarea placeholder="Your Message" rows="4"></textarea>
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- RIGHT INFO -->
+    <div class="contact-info">
+      <h3>Call on IMO</h3>
+      <p class="imo-text">
+        Bangla: +66 8141 90165<br>
+	    Hindi: +66 8000 81382<br>
+        English: +66 6502 76616<br>
+      </p>
+
+      <p class="info-note">
+        Our support team is available to assist you with accurate
+        Thai Lottery information and guidance.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<section class="footer">
+  <h2>Need Immediate Help?</h2>
+  <button class="btn" onclick="openIMO()">
+  Call on IMO
+</button>
+
+
+</section>
+<!-- IMO MODAL -->
+<div class="imo-overlay" id="imoPopup">
+  <div class="imo-modal">
+    <h3>Call on IMO</h3>
+
+    <p>
+      <strong>BD Bangla:</strong> +66 8551 39222<br>
+      <strong>GB English:</strong> +66 8003 52046<br>
+      <strong>IN Hindi:</strong> +66 8265 72780
+    </p>
+
+    <button class="btn close-btn" onclick="closeIMO()">Close</button>
+  </div>
+</div>
+<!-- Premium Bottom Navigation -->
+<div class="bottom-nav">
+    <a href="index.html" class="bottom-item active">
+        <span class="icon">🏠</span>
+        <span>Home</span>
+    </a>
+
+    <a href="results.html" class="bottom-item">
+        <span class="icon">📊</span>
+        <span>Results</span>
+    </a>
+
+    <a href="winners.html" class="bottom-item">
+        <span class="icon">🏆</span>
+        <span>Winners</span>
+    </a>
+</div>
+
+<script src="./assets/js/main.js"></script>
+
+
+</body>
+</html>

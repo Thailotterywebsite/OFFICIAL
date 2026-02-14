@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration - Thai Lottery</title>
+<link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+/* Full background like your pages */
+.gate-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+        url('assets/images/header-bg.jpg') center/cover no-repeat;
+    padding:20px;
+}
+
+/* Card design */
+.gate-card{
+    width:100%;
+    max-width:380px;
+    background:#071a22;
+    border-radius:25px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,0.6);
+    border:1px solid rgba(255,204,102,0.2);
+}
+
+/* Logo */
+.gate-card img{
+    width:70px;
+    margin-bottom:15px;
+}
+
+/* Title */
+.gate-card h2{
+    color:#ffcc66;
+    margin-bottom:20px;
+    font-size:24px;
+}
+
+/* Input */
+.gate-card input{
+    width:100%;
+    padding:14px;
+    border-radius:12px;
+    border:1px solid #333;
+    background:#000;
+    color:#fff;
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+/* Button */
+.gate-card button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    font-weight:bold;
+    font-size:15px;
+    cursor:pointer;
+    background:linear-gradient(90deg,#ffcc66,#f7a92a);
+}
+
+/* Login text */
+.gate-card p{
+    margin-top:15px;
+    color:#bbb;
+    font-size:14px;
+}
+
+.gate-card a{
+    color:#ffcc66;
+    text-decoration:none;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="gate-page">
+    <div class="gate-card">
+        <img src="assets/images/logo.png" alt="Logo">
+        <h2>Registration</h2>
+
+        <input type="password" id="accessCode" placeholder="Referral code...">
+        <button onclick="checkCode()">Next →</button>
+
+        <p>Have an account yet? <a href="login.html">Login</a></p>
+    </div>
+</div>
+
+<script>
+function checkCode(){
+    var code = document.getElementById("accessCode").value.trim();
+
+    var correctCode = "VIP123";   // ← Change your secret code here
+
+    if(code === correctCode){
+        localStorage.setItem("access_granted", "yes");
+        window.location.href = "index.html";
+    }else{
+        alert("Invalid referral code");
+    }
+}
+</script>
+<script src="assets/js/gate.js"></script>
+
+</body>
+</html>

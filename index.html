@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thai Lottery Government Agency</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    if(localStorage.getItem("access_granted") !== "yes"){
+    window.location = "gate.html";
+}
+</script>
+
+</head>
+
+
+<body>
+
+
+<header class="main-header">
+    <div class="header-container">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo">
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Menu -->
+<nav id="mobileMenu" class="mobile-menu">
+
+    <div class="menu-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="results.html">Results</a>
+        <a href="winners.html">Winners</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="menu-logout">
+        <button onclick="logoutUser()" class="logout-btn">Logout</button>
+    </div>
+
+</nav>
+
+
+  <!-- ✅ MOBILE MENU BUTTON -->
+  <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+
+<section class="hero">
+  <div class="container">
+    <h1>Official Thai Lottery Information Center</h1>
+    <p>
+      Get trusted Thai National Lottery results, updates, and professional
+      support with secure and transparent information services.
+    </p>
+    <a href="results.html" class="btn">View Latest Results</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <span>OUR SERVICES</span>
+      <h2>Reliable Thai Lottery Information</h2>
+	  <p class="services-intro">
+  We provide accurate, transparent, and up-to-date Thai lottery information,
+  helping users make informed decisions with confidence and trust.
+</p>
+
+    </div>
+
+   <div class="cards">
+  <div class="services-grid">
+
+    <div class="service-card">
+      <img src="assets/images/card1.jpg">
+      <h3>Thai National Lottery</h3>
+      <p>Accurate and updated lottery results with full transparency.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="assets/images/card2.jpg">
+      <h3>Secure System</h3>
+      <p>Modern security standards to protect user data.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="assets/images/card3.jpg">
+      <h3>24/7 Support</h3>
+      <p>Professional assistance available anytime.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="assets/images/service4.jpg">
+      <h3>Real-Time Updates</h3>
+      <p>Official & Reliable Thai Lottery Information</p>
+    </div>
+
+    <div class="service-card">
+      <img src="assets/images/service5.jpg">
+      <h3>Verified Sources</h3>
+      <p>Official government-recognized information.</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+	  
+    </div>
+  </div>
+  
+</section>
+
+<section class="footer">
+  <h2>Call on IMO</h2>
+  <a href="#" class="btn">Contact Now</a>
+  <p style="margin-top:20px;color:#ccc;">
+    Bangla: +66 8141 90165<br>
+	Hindi: +66 8000 81382<br>
+    English: +66 6502 76616<br>
+    
+  </p>
+</section>
+<!-- IMO MODAL -->
+<div class="imo-overlay" id="imoPopup">
+  <div class="imo-modal">
+    <h3>Call on IMO</h3>
+
+    <p>
+      <strong>BD Bangla:</strong> +66 8551 39222<br>
+      <strong>GB English:</strong> +66 8003 52046<br>
+      <strong>IN Hindi:</strong> +66 8265 72780
+    </p>
+
+    <button class="btn close-btn" onclick="closeIMO()">Close</button>
+  </div>
+</div>
+<!-- ===== PRO Bottom Navigation ===== -->
+<!-- Premium Bottom Navigation -->
+<div class="bottom-nav">
+    <a href="index.html" class="bottom-item active">
+        <span class="icon">🏠</span>
+        <span>Home</span>
+    </a>
+
+    <a href="results.html" class="bottom-item">
+        <span class="icon">📊</span>
+        <span>Results</span>
+    </a>
+
+    <a href="winners.html" class="bottom-item">
+        <span class="icon">🏆</span>
+        <span>Winners</span>
+    </a>
+</div>
+
+
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>
